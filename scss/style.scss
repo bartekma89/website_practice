@@ -2,6 +2,7 @@
 @import "grid";
 
 $color-element-grey: #313332;
+$color-grey-bg: #fff;
 
 * {
 	box-sizing: border-box;
@@ -10,7 +11,7 @@ $color-element-grey: #313332;
 body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-	background-color: #fff;
+	background-color: $color-grey-bg;
 
 	.container {
 		width: 100%;
@@ -38,7 +39,7 @@ header {
 				display: block;
 				line-height: 70px;
 				padding: 0 20px;
-				color: #fff;
+				color: $color-grey-bg;
 				text-decoration: none;
 				text-transform: uppercase;
 			}
