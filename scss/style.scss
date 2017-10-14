@@ -706,6 +706,10 @@ footer .social-media {
 			.employee-col {
 				width: 270px;
 				display: inline-block;
+				
+				[class*="employee"] {
+				cursor: auto;
+			}
 			}
 			[class*="col-"] {
 				float: none;

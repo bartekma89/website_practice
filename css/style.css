@@ -576,6 +576,8 @@ footer .social-media .icons {
     .employees .row .employee-col {
       width: 270px;
       display: inline-block; }
+      .employees .row .employee-col [class*="employee"] {
+        cursor: auto; }
     .employees .row [class*="col-"] {
       float: none; }
   /*FOOTER*/
