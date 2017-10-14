@@ -552,10 +552,11 @@ footer .social-media {
 	}
 
 	/*ICONS*/
-	section.icons .icons > .container {
-		.fa,
-		h4 {
-			cursor: auto;
+	section.icons > .container {
+		.content {
+			span {
+				cursor: auto;
+			}
 		}
 	}
 
@@ -671,18 +672,29 @@ footer .social-media {
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+	
+	/*ICONS*/
+	section.icons > .container {
+		.content {
+			span {
+				cursor: auto;
+			}
+		}
+	}
 
 	/*GALLERY*/
 	.gallery {
 		[class*="icon-"] {
 			display: block;
 		}
-		.fa {
-			font-size: 150%;
-			height: 30px;
-			width: 30px;
-			line-height: 30px;
-			cursor: auto;
+		.layer {
+			.fa {
+				font-size: 150%;
+				height: 30px;
+				width: 30px;
+				line-height: 30px;
+				cursor: auto;
+			}
 		}
 	}
 

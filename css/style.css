@@ -500,8 +500,7 @@ footer .social-media .icons {
     .slogan h1 {
       text-align: center; }
   /*ICONS*/
-  section.icons .icons > .container .fa,
-  section.icons .icons > .container h4 {
+  section.icons > .container .content span {
     cursor: auto; }
   /*GALLERY*/
   .gallery [class*="icon-"] {
@@ -559,10 +558,13 @@ footer .social-media .icons {
       cursor: auto; } }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+  /*ICONS*/
+  section.icons > .container .content span {
+    cursor: auto; }
   /*GALLERY*/
   .gallery [class*="icon-"] {
     display: block; }
-  .gallery .fa {
+  .gallery .layer .fa {
     font-size: 150%;
     height: 30px;
     width: 30px;
