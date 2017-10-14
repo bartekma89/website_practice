@@ -1,4 +1,4 @@
-sass-cache/*
-grafika/*
+.sass-cache/*
+images/*
 css/style.css.map
 node_modules/*

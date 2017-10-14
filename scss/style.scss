@@ -2,7 +2,7 @@
 @import "grid";
 
 $color-element-grey: #313332;
-$color-grey-bg: #fff;
+$color-white: #fff;
 
 * {
 	box-sizing: border-box;
@@ -11,7 +11,7 @@ $color-grey-bg: #fff;
 body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-	background-color: $color-grey-bg;
+	background-color: $color-white;
 
 	.container {
 		width: 100%;
@@ -39,7 +39,7 @@ header {
 				display: block;
 				line-height: 70px;
 				padding: 0 20px;
-				color: $color-grey-bg;
+				color: $color-white;
 				text-decoration: none;
 				text-transform: uppercase;
 			}
@@ -57,7 +57,6 @@ header {
 	text-align: center;
 	padding-top: 7px;
 }
-
 
 /*SLOGAN */
 
@@ -81,7 +80,7 @@ header {
 
 	> h1 {
 		text-align: left;
-		color: #fff;
+		color: $color-white;
 		margin: 20px 70px 20px 30px;
 		text-transform: uppercase;
 		line-height: 30px;
@@ -106,7 +105,7 @@ header {
 		height: 70px;
 		border-radius: 10px;
 		border: none;
-		color: #fff;
+		color: $color-white;
 		font-size: 40px;
 		padding: 15px;
 		transition: 0.3s;
@@ -335,7 +334,7 @@ header {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: #fff;
+	color: $color-white;
 	display: none;
 	text-align: center;
 }
@@ -344,7 +343,7 @@ header {
 
 %text-properties {
 	text-align: left;
-	color: #fff;
+	color: $color-white;
 	margin-left: 30px;
 }
 
@@ -428,7 +427,7 @@ header {
 
 footer {
 	background-color: $color-element-grey;
-	color: #fff;
+	color: $color-white;
 
 	.container > .row {
 		padding: 30px;
@@ -442,7 +441,7 @@ footer {
 
 	.information-2 {
 		background-color: #252726;
-		color: #fff;
+		color: $color-white;
 
 		p {
 			text-align: center;
