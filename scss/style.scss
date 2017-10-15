@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
 @import "grid";
-
 $color-element-grey: #313332;
 $color-white: #fff;
 
@@ -19,9 +18,7 @@ body {
 		margin: 0 auto;
 	}
 }
-
 /*NAV*/
-
 header {
 	background-color: $color-element-grey;
 	background-color: rgba(0, 0, 0, 0.8);
@@ -50,18 +47,15 @@ header {
 			}
 		}
 	}
-
 }
 
 #logo {
 	text-align: center;
 	padding-top: 7px;
 }
-
 /*SLOGAN */
-
 .hero {
-	background-image: url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+	background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	background-attachment: fixed;
 	height: 400px;
 	background-size: cover;
@@ -92,9 +86,7 @@ header {
 		}
 	}
 }
-
 /*ICONS*/
-
 .icons > .container {
 	margin: 50px auto;
 	text-align: center;
@@ -122,14 +114,13 @@ header {
 		}
 
 		p {
-			font-size: .9em;
+			font-size: 0.9em;
 			margin: 10px auto;
 			opacity: 0.5;
 			line-height: 20px;
 			padding-right: 80px;
 			padding-left: 80px;
 		}
-
 	}
 
 	.content {
@@ -146,7 +137,6 @@ header {
 			}
 		}
 
-
 		p {
 			font-size: 0.7em;
 			margin: 10px 15px;
@@ -155,22 +145,18 @@ header {
 		}
 	}
 }
-
 /* GALLERY */
-
 @mixin col-height {
 	[class*="col-"] {
 		height: 200px;
 	}
 }
-
 @mixin pic-properties {
 	[class*="pic-"] {
 		background-size: cover;
 		background-position: center;
 		padding: 0;
 	}
-
 }
 
 .gallery {
@@ -178,51 +164,50 @@ header {
 	@include pic-properties;
 
 	.pic-1 {
-		background-image: url(https://images.pexels.com/photos/136049/pexels-photo-136049.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+		background-image: url("https://images.pexels.com/photos/136049/pexels-photo-136049.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	}
 
 	.pic-2 {
-		background-image: url(https://images.pexels.com/photos/122244/pexels-photo-122244.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+		background-image: url("https://images.pexels.com/photos/122244/pexels-photo-122244.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	}
 
 	.pic-3 {
-		background-image: url(https://images.pexels.com/photos/122101/pexels-photo-122101.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+		background-image: url("https://images.pexels.com/photos/122101/pexels-photo-122101.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	}
 
 	.pic-4 {
-		background-image: url(https://images.pexels.com/photos/567448/pexels-photo-567448.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+		background-image: url("https://images.pexels.com/photos/567448/pexels-photo-567448.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	}
 
 	.pic-5 {
-		background-image: url(https://images.pexels.com/photos/567451/pexels-photo-567451.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+		background-image: url("https://images.pexels.com/photos/567451/pexels-photo-567451.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	}
 
 	.pic-6 {
-		background-image: url(https://images.pexels.com/photos/131023/pexels-photo-131023.png?w=940&h=650&auto=compress&cs=tinysrgb);
+		background-image: url("https://images.pexels.com/photos/131023/pexels-photo-131023.png?w=940&h=650&auto=compress&cs=tinysrgb");
 	}
 
 	.pic-7 {
-		background-image: url(https://images.pexels.com/photos/265315/pexels-photo-265315.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+		background-image: url("https://images.pexels.com/photos/265315/pexels-photo-265315.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	}
 
 	.pic-8 {
-		background-image: url(https://images.pexels.com/photos/311004/pexels-photo-311004.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+		background-image: url("https://images.pexels.com/photos/311004/pexels-photo-311004.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	}
 
 	.pic-9 {
-		background-image: url(https://images.pexels.com/photos/131044/pexels-photo-131044.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+		background-image: url("https://images.pexels.com/photos/131044/pexels-photo-131044.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	}
 
 	.pic-10 {
-		background-image: url(https://images.pexels.com/photos/131921/pexels-photo-131921.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+		background-image: url("https://images.pexels.com/photos/131921/pexels-photo-131921.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	}
 }
 
 .gallery {
-
 	.layer {
 		height: 100%;
-		transition: .5s;
+		transition: 0.5s;
 		position: relative;
 
 		.fa {
@@ -234,7 +219,7 @@ header {
 			border-radius: 5px;
 			border: none;
 			background-color: #bdc3c7;
-			transition: .2s;
+			transition: 0.2s;
 			cursor: pointer;
 		}
 	}
@@ -262,11 +247,8 @@ header {
 		@extend %fa-display;
 		transform: translate(15px, -50%);
 	}
-
 }
-
 /*EMPLOYEES*/
-
 .employees {
 	.container {
 		margin-top: 50px;
@@ -285,7 +267,6 @@ header {
 	}
 }
 
-
 .employees [class^="employee"] {
 	background-size: cover;
 	border-radius: 50%;
@@ -293,25 +274,24 @@ header {
 }
 
 .employee1 {
-	background-image: url(https://images.pexels.com/photos/567632/pexels-photo-567632.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+	background-image: url("https://images.pexels.com/photos/567632/pexels-photo-567632.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	background-position: top;
 }
 
 .employee2 {
-	background-image: url(https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+	background-image: url("https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	background-position: center;
 }
 
 .employee3 {
-	background-image: url(https://images.pexels.com/photos/38554/girl-people-landscape-sun-38554.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+	background-image: url("https://images.pexels.com/photos/38554/girl-people-landscape-sun-38554.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	background-position: top;
 }
 
 .employee4 {
-	background-image: url(https://images.pexels.com/photos/324658/pexels-photo-324658.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+	background-image: url("https://images.pexels.com/photos/324658/pexels-photo-324658.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	background-position: center;
 }
-
 
 .employees .layer {
 	border-radius: 50%;
@@ -319,8 +299,8 @@ header {
 	position: relative;
 	height: 250px;
 }
-
 //todo
+
 .employees h3 {
 	color: #313234;
 	font-size: 1rem;
@@ -338,9 +318,7 @@ header {
 	display: none;
 	text-align: center;
 }
-
 /*PROMOTION*/
-
 %text-properties {
 	text-align: left;
 	color: $color-white;
@@ -384,12 +362,11 @@ header {
 		.col-8 > p {
 			@extend %text-properties;
 			font-style: italic;
-			font-size: .9rem;
+			font-size: 0.9rem;
 			margin-top: 0;
 		}
 	}
 }
-
 @mixin pic-properties {
 	height: 300px;
 	background-position: center;
@@ -398,12 +375,10 @@ header {
 }
 
 .promotion .pic {
-	background-image: url(https://images.pexels.com/photos/355988/pexels-photo-355988.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+	background-image: url("https://images.pexels.com/photos/355988/pexels-photo-355988.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 	@include pic-properties;
 }
-
 /*NUMBER*/
-
 .number .decoration {
 	text-align: center;
 	margin: 40px auto;
@@ -420,11 +395,8 @@ header {
 		color: #2980b9;
 		font-size: 1rem;
 	}
-
 }
-
 /*FOOTER*/
-
 footer {
 	background-color: $color-element-grey;
 	color: $color-white;
@@ -434,8 +406,8 @@ footer {
 
 		.information-1 p {
 			font-size: 0.8em;
-			margin: 10px 15px 10px 15px;
-			line-height: 20px
+			margin: 10px 15px;
+			line-height: 20px;
 		}
 	}
 
@@ -454,23 +426,23 @@ footer {
 		text-align: left;
 		text-transform: uppercase;
 		font-size: 1.4rem;
-		margin: 20px 15px 20px 15px;
+		margin: 20px 15px;
 	}
 
 	h1::after {
-		content: "   ---------------";
-		letter-spacing: -2px
+		content: " ---------------";
+		letter-spacing: -2px;
 	}
 
 	.information-1 p {
-		font-size: .9rem;
+		font-size: 0.9rem;
 		text-align: left;
 	}
 }
 
 %text-git-properties {
 	margin-top: 0;
-	font-size: .9rem;
+	font-size: 0.9rem;
 }
 
 footer .getintouch {
@@ -479,6 +451,7 @@ footer .getintouch {
 		text-align: left;
 		padding-left: 10px;
 	}
+
 	h4 {
 		@extend %text-git-properties;
 		text-align: left;
@@ -505,14 +478,11 @@ footer .social-media {
 			background-color: #3498db;
 			text-align: center;
 			cursor: pointer;
-			transition: .2s;
+			transition: 0.2s;
 		}
-
 	}
 }
-
 /*MEDIA*/
-
 @media (max-width: 767px) {
 	/*NAV*/
 	%col-s-properties {
@@ -524,11 +494,14 @@ footer .social-media {
 		#logo {
 			padding-bottom: 5px;
 		}
+
 		.col-3 {
 			@extend %col-s-properties;
 		}
+
 		.col-9 {
 			@extend %col-s-properties;
+
 			ul {
 				float: none;
 				text-align: center;
@@ -542,15 +515,14 @@ footer .social-media {
 			}
 		}
 	}
-
 	/*SLOGAN*/
 	.slogan {
 		width: 100%;
+
 		h1 {
 			text-align: center;
 		}
 	}
-
 	/*ICONS*/
 	section.icons > .container {
 		.content {
@@ -559,13 +531,12 @@ footer .social-media {
 			}
 		}
 	}
-
 	/*GALLERY*/
 	.gallery {
-
 		[class*="icon-"] {
 			display: block;
 		}
+
 		.layer .fa {
 			font-size: 150%;
 			height: 30px;
@@ -574,7 +545,6 @@ footer .social-media {
 			cursor: auto;
 		}
 	}
-
 	/*EMPLOYEE*/
 	.employees {
 		.employee-col {
@@ -584,13 +554,12 @@ footer .social-media {
 				cursor: auto;
 			}
 		}
+
 		[class*="col-"] {
 			float: none;
 			margin: 0 auto;
 		}
 	}
-
-
 	/*PROMOTION*/
 	%col-width {
 		width: 100%;
@@ -616,30 +585,29 @@ footer .social-media {
 			}
 		}
 	}
-
 	/*NUMBER*/
 	.number {
 		.decoration {
 			width: 100%;
 			margin: 10px auto;
 		}
+
 		.decoration:nth-of-type(4) > h5 {
 			margin-bottom: 10px;
 		}
 	}
-
 	/*FOOTER*/
 	footer {
 		h1::before {
-			content: "---------------    ";
+			content: "--------------- ";
 			letter-spacing: -2px;
 		}
 
 		.information-1 {
 			.about,
 			.social-media {
-				p,
-				h1 {
+				h1,
+				p {
 					text-align: center;
 				}
 			}
@@ -651,28 +619,30 @@ footer .social-media {
 			h1 {
 				text-align: center;
 			}
+
 			.row {
 				.col-s-5 h4 {
 					text-align: right;
 					padding-right: 10px;
 				}
+
 				.col-s-7 p {
 					text-align: left;
 					padding-left: 10px;
 				}
 			}
 		}
+
 		.social-media .icons {
 			text-align: center;
+
 			.fa {
 				cursor: auto;
 			}
 		}
 	}
 }
-
 @media (min-width: 768px) and (max-width: 1200px) {
-	
 	/*ICONS*/
 	section.icons > .container {
 		.content {
@@ -681,12 +651,12 @@ footer .social-media {
 			}
 		}
 	}
-
 	/*GALLERY*/
 	.gallery {
 		[class*="icon-"] {
 			display: block;
 		}
+
 		.layer {
 			.fa {
 				font-size: 150%;
@@ -697,7 +667,6 @@ footer .social-media {
 			}
 		}
 	}
-
 	/*EMPLOYEES*/
 	.employees {
 		.row {
@@ -706,21 +675,21 @@ footer .social-media {
 			.employee-col {
 				width: 270px;
 				display: inline-block;
-				
+
 				[class*="employee"] {
-				cursor: auto;
+					cursor: auto;
+				}
 			}
-			}
+
 			[class*="col-"] {
 				float: none;
 			}
 		}
 	}
-
 	/*FOOTER*/
 	footer {
 		h1::before {
-			content: "---------------   ";
+			content: "--------------- ";
 			letter-spacing: -2px;
 			text-align: center;
 		}
@@ -733,6 +702,7 @@ footer .social-media {
 						padding-right: 40px;
 					}
 				}
+
 				.col-m-8 {
 					p {
 						text-align: left;
@@ -747,11 +717,14 @@ footer .social-media {
 			h1 {
 				text-align: center;
 			}
+
 			p {
 				text-align: center;
 			}
+
 			.icons {
 				text-align: center;
+
 				.fa {
 					cursor: auto;
 				}
@@ -759,7 +732,6 @@ footer .social-media {
 		}
 	}
 }
-
 @media (min-width: 1200px) {
 	/*NAV*/
 	$color-bg-nav_menu: #ccc;
@@ -775,7 +747,6 @@ footer .social-media {
 			}
 		}
 	}
-
 	/*ICONS*/
 	$color-icon-icons: #3498db;
 	$color-icon-icons: #3498db;
@@ -787,6 +758,7 @@ footer .social-media {
 					.fa {
 						background-color: $color-icon-icons;
 					}
+
 					h4 {
 						color: $color-icon-icons;
 					}
@@ -794,7 +766,6 @@ footer .social-media {
 			}
 		}
 	}
-
 	/*GALLERY*/
 	$color-bg-icon-gallery: #34495e;
 	$color-icon-gallery: #ecf0f1;
@@ -809,6 +780,7 @@ footer .social-media {
 				background: rgba(0, 0, 0, 0.5);
 			}
 		}
+
 		.icon-1 {
 			&:hover {
 				background-color: $color-bg-icon-gallery;
@@ -816,6 +788,7 @@ footer .social-media {
 				transform: translate(-35px, -50%) scale(1.5);
 			}
 		}
+
 		.icon-2 {
 			&:hover {
 				background-color: $color-bg-icon-gallery;
@@ -824,7 +797,6 @@ footer .social-media {
 			}
 		}
 	}
-
 	/*EMPLOYEES*/
 	.employees {
 		[class*="employee"] {
@@ -832,6 +804,7 @@ footer .social-media {
 				&:hover {
 					background-color: rgba(0, 0, 0, 0.5);
 					transition: 0.3s;
+
 					h3 {
 						display: block;
 						transition: 0.5s;
@@ -840,7 +813,6 @@ footer .social-media {
 			}
 		}
 	}
-
 	/*FOOTER*/
 	footer {
 		.fa {

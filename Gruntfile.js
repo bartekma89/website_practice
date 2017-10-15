@@ -4,11 +4,10 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		//sass
 		sass: {
-			options: {
-				sourceMap: true,
-				style: 'expanded'
-			},
 			dist: {
+				options: {
+					style: 'expanded'
+				},
 				files: {
 					'css/style.css': 'scss/style.scss'
 				}
@@ -25,25 +24,28 @@ module.exports = function (grunt) {
 					cwd: 'images/',
 					src: ['**/*.{png, jpg, gif}', '!build/**/*.{png, jpg, gif}'],
 					dest: 'images/build'
-				}]
+        }]
 			}
 		},
 		//watch
 		watch: {
-			scripts: {
+			scss: {
 				files: ['scss/*.scss'],
 				tasks: ['sass'],
 				options: {
-					spawn: false,
+					livereload: true,
+					spawn: false
 				}
+			},
+			browser: {
+				files: ['css/*.css', '.*.html'],
+				tasks:['browserSync']
 			}
 		},
 		//browser-sync
 		browserSync: {
 			bsFile: {
-				src: [
-					'/css/*.css', '/*.html'
-				]
+				src: ['css/*.css', '*.html']
 			},
 			options: {
 				server: './',
@@ -53,12 +55,11 @@ module.exports = function (grunt) {
 
 	});
 
-	grunt.loadNpmTasks('grunt-sass');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-browser-sync');
 
 	grunt.registerTask('default', ['sass', 'browserSync', 'watch']);
-	grunt.registerTask('image', ['imagemin']);
-	grunt.registerTask('browser', ['browserSync']);
+	grunt.registerTask('img', ['imagemin']);
 };
