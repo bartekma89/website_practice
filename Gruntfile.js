@@ -27,6 +27,17 @@ module.exports = function (grunt) {
         }]
 			}
 		},
+		
+		//browser-sync
+		browserSync: {
+			bsFile: {
+				src: ['css/*.css', '*.html']
+			},
+			options: {
+				server: './',
+				watchTask: true
+			}
+		},
 		//watch
 		watch: {
 			scss: {
@@ -41,17 +52,8 @@ module.exports = function (grunt) {
 				files: ['css/*.css', '.*.html'],
 				tasks:['browserSync']
 			}
-		},
-		//browser-sync
-		browserSync: {
-			bsFile: {
-				src: ['css/*.css', '*.html']
-			},
-			options: {
-				server: './',
-				watchTask: true
-			}
 		}
+
 
 	});
 
